@@ -1,5 +1,5 @@
 {% set name = "cdshealpix" %}
-{% set version = "0.6.0" %}
+{% set version = "0.6.1" %}
 
 
 package:
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cdshealpix-{{ version }}.tar.gz
-  sha256: d20edac69499b4037c910b8eeafdebb03385a22850422433341070a797d28667
+  sha256: 72b33dea542ceedb3fb8d2e13921a1b8b5249439758edad15dab7803f38abf67
 
 build:
-  number: 1
-  skip: True  # [py<35]
+  number: 0
+  skip: true  # [py<35]
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
 requirements:
