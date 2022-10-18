@@ -25,11 +25,11 @@ requirements:
     - pip
     - toml
     - maturin
-    - python >=3.8
+    - python
   run:
     - numpy >=1.18
     - astropy >=5.1
-    - python >=3.8
+    - python
 
 test:
   imports:
@@ -38,7 +38,7 @@ test:
     - pip check
   requires:
     - pip
-    - python >=3.8
+    - python
     - pytest
 
 about:
