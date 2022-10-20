@@ -12,7 +12,7 @@ source:
 
 build:
   number: 0
-  skip: true  # [py<38]
+  skip: true  # [py<37]
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
 requirements:
@@ -27,8 +27,7 @@ requirements:
     - maturin
     - python
   run:
-    - numpy >=1.18
-    - astropy >=5.1
+    - astropy
     - python
 
 test:
