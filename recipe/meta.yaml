@@ -11,7 +11,7 @@ source:
   sha256: f117281f2dff6a83a2f2d481938bd832a1389f593df908856ce072602f7e924a
 
 build:
-  number: 1
+  number: 2
   skip: true  # [py<35]
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
@@ -19,7 +19,9 @@ requirements:
   build:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - {{ compiler('c') }}              # [unix]
+    - {{ stdlib("c") }}                # [unix]
     - {{ compiler('m2w64_c') }}        # [win]
+    - {{ stdlib("m2w64_c") }}          # [win]
     - rust
   host:
     - pip
