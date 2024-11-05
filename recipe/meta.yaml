@@ -44,7 +44,7 @@ test:
     - pytest
 
 about:
-  home: https://pypi.org/project/cdshealpix/
+  home: https://pypi.io/project/cdshealpix/
   summary: Python cdshealpix package wrapping code of the cdshealpix crate.
   license: BSD-3-Clause
   license_file:
