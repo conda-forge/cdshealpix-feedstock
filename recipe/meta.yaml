@@ -11,7 +11,7 @@ source:
   sha256: a77ede7055c69f363f6fea1381d70a5d6e2797d9eb3588a5ccf9697135729cc7
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<35]
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
@@ -29,7 +29,7 @@ requirements:
     - maturin
     - python
   run:
-    - astropy
+    - astropy-base
     - python
 
 test:
