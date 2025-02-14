@@ -11,7 +11,7 @@ source:
   sha256: a77ede7055c69f363f6fea1381d70a5d6e2797d9eb3588a5ccf9697135729cc7
 
 build:
-  number: 1
+  number: 2
   skip: true  # [py<35]
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
@@ -22,6 +22,7 @@ requirements:
     - {{ stdlib("c") }}                # [unix]
     - {{ compiler('m2w64_c') }}        # [win]
     - {{ stdlib("m2w64_c") }}          # [win]
+    - {{ compiler('rust') }}
     - rust
   host:
     - pip
@@ -43,7 +44,7 @@ test:
     - pytest
 
 about:
-  home: https://pypi.org/project/cdshealpix/
+  home: https://pypi.io/project/cdshealpix/
   summary: Python cdshealpix package wrapping code of the cdshealpix crate.
   license: BSD-3-Clause
   license_file:
