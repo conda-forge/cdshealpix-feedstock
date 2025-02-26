@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cdshealpix-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/cdshealpix-{{ version }}.tar.gz
   sha256: a77ede7055c69f363f6fea1381d70a5d6e2797d9eb3588a5ccf9697135729cc7
 
 build:
